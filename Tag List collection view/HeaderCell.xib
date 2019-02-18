@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderCell" id="hOw-TY-RCp" customClass="HeaderCell" customModule="Tag_List_collection_view" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hP2-zT-dMT">
+                        <rect key="frame" x="10" y="0.0" width="52" height="60"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XaQ-ye-Vaz">
+                        <rect key="frame" x="241" y="0.0" width="69" height="60"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <state key="normal" title="See More"/>
+                        <connections>
+                            <action selector="seeMoreButtonTap:" destination="hOw-TY-RCp" eventType="touchUpInside" id="hgy-or-zMX"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="hP2-zT-dMT" secondAttribute="bottom" id="2Yt-e5-skJ"/>
+                <constraint firstItem="XaQ-ye-Vaz" firstAttribute="top" secondItem="hOw-TY-RCp" secondAttribute="top" id="4hi-ct-dim"/>
+                <constraint firstAttribute="bottom" secondItem="XaQ-ye-Vaz" secondAttribute="bottom" id="6Ev-QX-fay"/>
+                <constraint firstItem="XaQ-ye-Vaz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hP2-zT-dMT" secondAttribute="trailing" constant="10" id="8WR-MC-oOF"/>
+                <constraint firstItem="hP2-zT-dMT" firstAttribute="leading" secondItem="hOw-TY-RCp" secondAttribute="leading" constant="10" id="Ebb-wH-xkv"/>
+                <constraint firstAttribute="trailing" secondItem="XaQ-ye-Vaz" secondAttribute="trailing" constant="10" id="Q9D-8L-pk8"/>
+                <constraint firstItem="hP2-zT-dMT" firstAttribute="top" secondItem="hOw-TY-RCp" secondAttribute="top" id="baK-t6-HTG"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Ji1-d2-rU3"/>
+            <connections>
+                <outlet property="seeMoreButton" destination="XaQ-ye-Vaz" id="exb-23-cYj"/>
+                <outlet property="titleLabel" destination="hP2-zT-dMT" id="2Oa-8J-kaM"/>
+            </connections>
+            <point key="canvasLocation" x="136.875" y="153.16901408450704"/>
+        </collectionViewCell>
+    </objects>
+</document>
