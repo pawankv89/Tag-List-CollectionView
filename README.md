@@ -2,7 +2,7 @@
 Tag List CollectionView
 =========
 
-## Simple and Customizable iOS tag list view, in Swift 4.2.
+## Simple and Customizable iOS tag list view, in Swift 5.
 ------------
  Added Some screens here.
  
