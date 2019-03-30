@@ -6,7 +6,7 @@ Tag List CollectionView
 ------------
  Added Some screens here.
  
-[![](https://github.com/pawankv89/Tag-List-CollectionView/blob/master/images/screen_1.png)]
+![](https://github.com/pawankv89/Tag-List-CollectionView/blob/master/images/screen_1.png)
 
 
 
