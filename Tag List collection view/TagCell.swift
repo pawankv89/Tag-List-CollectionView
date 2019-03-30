@@ -11,7 +11,6 @@ import UIKit
 class TagCell: UICollectionViewCell {
     
     @IBOutlet var titleLabel: UILabel?
-    
     static var reuseIdentifierString: String = "TagCell"
 
     override func awakeFromNib() {

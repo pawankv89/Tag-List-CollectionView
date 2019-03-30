@@ -93,7 +93,6 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
             let footerView: HeaderCell = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: HeaderCell.reuseIdentifierString, for: indexPath as IndexPath) as! HeaderCell
             
             //footerView.backgroundColor = UIColor.gray
-            
             let itemsObject: [String: Any] = listItems[indexPath.section] as! [String: Any]
             let title: String = itemsObject["title"] as! String
             footerView.titleLabel.text = title
